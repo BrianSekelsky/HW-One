@@ -73,6 +73,13 @@ input[type="search"]::-webkit-search-decoration {
     color: var(--search-color);
 }
 
+.searchField-input::-ms-input-placeholder {
+    font-style: italic;
+    font-weight: bold;
+    font-family: serif;
+    color: var(--search-color);
+}
+
 .searchField-input:focus {
     outline: none;
 }
