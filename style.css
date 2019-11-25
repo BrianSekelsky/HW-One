@@ -68,6 +68,7 @@ input[type="search"]::-webkit-search-decoration {
 
 .searchField-input::placeholder {
     font-style: italic;
+    font-weight: bold;
     font-family: serif;
     color: var(--search-color);
 }
@@ -79,8 +80,9 @@ input[type="search"]::-webkit-search-decoration {
 .searchField-button {
     border: none;
     border-radius: 0 50px 50px 0;
-    width: 40px;
-    margin: 0 0 0 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0;
     background-color: white;
 }
 
@@ -91,7 +93,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 .searchField-icon {
-    padding-top: 0.15em;
     height: 1.2em;
+    padding-top: 0.15em;
     fill: var(--search-color);
 }
