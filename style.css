@@ -91,6 +91,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 .searchField-icon {
+    padding-top: 0.15em;
     height: 1.2em;
     fill: var(--search-color);
 }
