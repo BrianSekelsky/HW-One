@@ -36,7 +36,7 @@ li::before {
     background-position:center;
     background-repeat:no-repeat;
     background-size:100%;
-    background-image: url("done-24px.svg");
+    background-image: url("svg/done-24px.svg");
     background-position:center;
     filter: invert(1); /* Using this filter to make the black svg white */
     background-color: #DF4A75; /* Using the inverse of the desired color because of the filter */
