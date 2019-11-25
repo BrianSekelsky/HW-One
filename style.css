@@ -28,8 +28,8 @@ li {
 }
 li::before {
     content: attr(data-bullet);
-    height:1.2em;
-    width:1.2em;
+    height:1em;
+    width:1em;
     position: absolute;
     margin-left: -1.5em;
     background-repeat:no-repeat;
