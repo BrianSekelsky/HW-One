@@ -55,11 +55,18 @@ li::before {
 
 .searchField-input {
     margin-left: 20px;
-    border: none;
     flex-grow:2;
-    border:none;
+    border: none;
     font-size: 1em;
     width: 30px;
+    height: 100%;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
 }
 
 .searchField-input::placeholder {
@@ -74,8 +81,10 @@ li::before {
 
 .searchField-button {
     border: none;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 0 50px 50px 0;
     width: 40px;
+    margin: 0 0 0 20px;
+    background-color: white;
 }
 
 .searchField-button:hover, .searchField-button:hover > .searchField-icon {
