@@ -1,0 +1,90 @@
+:root {
+    --search-color: #197583;
+  }
+
+.externalLink {
+    color: #CB4E3F;
+    transition: all .2s;
+    padding: .15em;
+}
+
+.externalLink:hover {
+    color: white;
+    background-color: #CB4E3F;
+    cursor: pointer;
+}
+
+.externalLink-icon {
+    padding-left: .2em;
+    height: 0.5em;
+    width: 0.5em;
+    fill: currentColor;
+}
+
+li {
+    list-style: none;
+    font-family: sans-serif;
+    padding-top: 0.5em;
+}
+li::before {
+    content:"";
+    height:1.2em;
+    width:1.2em;
+    display:block;
+    float:left;
+    margin-left:-2em;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-image: url("done-24px.svg");
+    background-position:center;
+    filter: invert(1); /* Using this filter to make the black svg white */
+    background-color: #DF4A75; /* Using the inverse of the desired color because of the filter */
+    border-radius:50%;
+}
+
+.searchField {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gray;
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+    margin-left: 50px;
+}
+
+.searchField-input {
+    margin-left: 20px;
+    border: none;
+    flex-grow:2;
+    border:none;
+    font-size: 1em;
+    width: 30px;
+}
+
+.searchField-input::placeholder {
+    font-style: italic;
+    font-family: serif;
+    color: var(--search-color);
+}
+
+.searchField-input:focus {
+    outline: none;
+}
+
+.searchField-button {
+    border: none;
+    border-radius: 0px 50px 50px 0px;
+    width: 40px;
+}
+
+.searchField-button:hover, .searchField-button:hover > .searchField-icon {
+    background-color: var(--search-color);
+    fill: white;
+    cursor: pointer;
+}
+
+.searchField-icon {
+    height: 1.2em;
+    fill: var(--search-color);
+}
